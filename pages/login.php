@@ -45,11 +45,7 @@ if (isset($_POST['connecter'])) {
     </div>
 
     <nav class="landing-links">
-        <a href="#accueil">Accueil</a>
-        <a href="#apropos">À propos</a>
-        <a href="#fonctionnalites">Fonctionnalités</a>
-        <a href="#contact">Contact</a>
-        <a href="pages/login.php" class="login-btn">Connexion</a>
+        <a href="../index.php" class="login-btn">Accueil</a>
     </nav>
 </header>
 
@@ -65,7 +61,11 @@ if (isset($_POST['connecter'])) {
             <input type="text" name="login" placeholder="Nom d'utilisateur" required>
             <input type="password" name="password" placeholder="Mot de passe" required>
             <button type="submit" name="connecter">Se connecter</button>
-            <p style="font-size: smaller; text-align: center; margin-top: 15px;">Compte Test - Login: ENSIASD Password: ENSIASD2026</p>
+            <p style="font-size:x-small; margin-top: 15px;">Compte Test (admin) - Login: ENSIASD Password: ENSIASD2026 <br>
+                login: prof_ahmed password:123456 <br>
+                login: etudiant_mgsi_s1 password:123456
+            </p>
+
         </form>
     </div>
 

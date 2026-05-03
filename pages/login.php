@@ -39,10 +39,19 @@ if (isset($_POST['connecter'])) {
 </head>
 
 <body>
-    <nav>
-        <h2>Gestion EDT</h2>
-        <a href="../index.php">Accueil</a>
+<header class="landing-navbar">
+    <div class="landing-logo">
+        Gestion<span>EDT</span>
+    </div>
+
+    <nav class="landing-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#contact">Contact</a>
+        <a href="pages/login.php" class="login-btn">Connexion</a>
     </nav>
+</header>
 
 
     <div class="login-box">

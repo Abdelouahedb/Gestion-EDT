@@ -10,9 +10,13 @@ if ($_SESSION['role'] !== 'admin') {
     header("Location: dashboard.php");
     exit();
 }
-
 $message = "";
 $error = "";
+if (isset($_SESSION['message'])) {
+    $message = $_SESSION['message'];
+    unset($_SESSION['message']);
+}
+
 
 // ADD FILIERE
 if (isset($_POST['ajouter'])) {
@@ -43,6 +47,7 @@ if (isset($_GET['delete'])) {
     try {
         $stmt = $PDO->prepare("DELETE FROM filieres WHERE id = :id");
         $stmt->execute(['id' => $id]);
+        $_SESSION['message'] = "Filière supprimée avec succès.";
 
         header("Location: filieres.php");
         exit();
@@ -88,7 +93,7 @@ if (isset($_POST['modifier'])) {
 }
 
 // GET ALL FILIERES
-$stmt = $PDO->query("SELECT * FROM filieres ORDER BY id DESC");
+$stmt = $PDO->query("SELECT * FROM filieres ORDER BY id ASC");
 $filieres = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
@@ -103,17 +108,7 @@ $filieres = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
 
-<nav>
-    <h2>Dashboard</h2>
-    <a href="dashboard.php">Accueil</a>
-    <a href="filieres.php">Filières</a>
-    <a href="enseignants.php">Enseignants</a>
-    <a href="salles.php">Salles</a>
-    <a href="modules.php">Modules</a>
-    <a href="creneaux.php">Créneaux</a>
-    <a href="emploi.php">Emploi</a>
-    <a href="logout.php">Déconnexion</a>
-</nav>
+<?php require_once "../includes/navbar.php"; ?>
 
 <div class="container">
 
@@ -129,7 +124,7 @@ $filieres = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <div class="form-box">
         <?php if ($filiere_edit): ?>
-            <h2>Modifier une filière</h2>
+            <h1>Modifier une filière</h1>
 
             <form method="POST">
                 <input type="hidden" name="id" value="<?= $filiere_edit['id'] ?>">
@@ -139,9 +134,11 @@ $filieres = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 <label>Description</label>
                 <textarea name="description"><?= htmlspecialchars($filiere_edit['description']) ?></textarea>
-
-                <button type="submit" name="modifier">Modifier</button>
-                <a href="filieres.php" class="btn-cancel">Annuler</a>
+            
+                <div class="form-actions">
+                    <button type="submit" name="modifier">Modifier</button>
+                    <a href="filieres.php" class="btn-cancel">Annuler</a>
+                </div>
             </form>
 
         <?php else: ?>
@@ -159,7 +156,7 @@ $filieres = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php endif; ?>
     </div>
 
-    <h2>Liste des Filières</h2>
+    <h1>Liste des Filières</h1>
 
     <table>
         <thead>

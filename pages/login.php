@@ -61,8 +61,8 @@ if (isset($_POST['connecter'])) {
             <input type="text" name="login" placeholder="Nom d'utilisateur" required>
             <input type="password" name="password" placeholder="Mot de passe" required>
             <button type="submit" name="connecter">Se connecter</button>
-            <p style="font-size:x-small; margin-top: 15px;">Compte Test (admin) - Login: ENSIASD Password: ENSIASD2026 <br>
-                login: prof_ahmed password:123456 <br>
+            <p style="font-size: small; margin-top: 15px;">Compte Test (admin) - Login: ENSIASD Password: ENSIASD2026 <br>
+                login: prof_boudhane password:123456 <br>
                 login: etudiant_mgsi_s1 password:123456
             </p>
 

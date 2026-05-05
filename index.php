@@ -232,10 +232,7 @@ if (isset($_POST['envoyer'])) {
     </div>
 </section>
 
-<footer class="landing-footer">
-    <p>© 2026 GestionEDT — Mini Projet Développement Web</p>
-    <p>Application web de gestion des emplois du temps scolaires</p>
-</footer>
+<?php require_once "./includes/footer.php"; ?>
 
 <script src="js/script.js"></script>
 

@@ -6,7 +6,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-// Optional: students should not access teacher planning
+// students should not access teacher planning
 if ($_SESSION['role'] === 'etudiant') {
     header("Location: planning_etudiant.php");
     exit();

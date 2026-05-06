@@ -70,6 +70,7 @@ $emplois = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planning Étudiant</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -157,6 +158,9 @@ $emplois = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </table>
 
 </div>
+
+
+<?php require_once "../includes/footer.php"; ?>
 
 </body>
 </html>

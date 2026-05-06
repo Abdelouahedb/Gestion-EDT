@@ -1081,3 +1081,251 @@ th {
         font-size: 30px;
     }
 }
+/* =========================
+   AUTH TABS (login + inscription)
+========================= */
+
+.auth-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.auth-tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: 0.2s ease;
+}
+
+.auth-tab:hover {
+    color: #1f4e79;
+}
+
+.auth-tab.active {
+    color: #1f4e79;
+    border-bottom-color: #1f4e79;
+}
+
+.strength-bar {
+    width: 100%;
+    height: 6px;
+    background: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.strength-bar span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: #ddd;
+    transition: width 0.25s ease, background 0.25s ease;
+}
+
+.strength-label {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.match-label {
+    font-size: 13px;
+    margin-top: -8px;
+    margin-bottom: 12px;
+    min-height: 18px;
+}
+
+/* =========================
+   DASHBOARD CHARTS
+========================= */
+
+.dashboard-page .dashboard-charts {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.dashboard-page .chart-box {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.dashboard-page .chart-box h2 {
+    color: #1f4e79;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.dashboard-page .chart-box canvas {
+    width: 100% !important;
+    height: 280px !important;
+}
+
+@media (max-width: 900px) {
+    .dashboard-page .dashboard-charts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .dashboard-page .chart-box canvas {
+        height: 240px !important;
+    }
+}
+
+/* =========================
+   POLITIQUE / MENTIONS LÉGALES
+========================= */
+
+.politique-section {
+    background: #f8fbff;
+}
+
+.politique-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.politique-card {
+    background: white;
+    padding: 28px 24px;
+    border-radius: 16px;
+    border: 1px solid #dbe7f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.politique-card h3 {
+    color: #163b5c;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.politique-card p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+@media (max-width: 950px) {
+    .politique-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   FOOTER ENRICHI
+========================= */
+
+.landing-footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto 18px;
+    padding: 10px 20px 0;
+    text-align: left;
+}
+
+.landing-footer .footer-col strong {
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.landing-footer .footer-col p {
+    color: #d1d5db;
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.landing-footer .footer-col a {
+    color: #d1d5db;
+    text-decoration: none;
+}
+
+.landing-footer .footer-col a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.landing-footer .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding-top: 14px;
+    margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+    .landing-footer .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* =========================
+   MOBILE VIEWPORT FIX (pages internes)
+   Ajoute le viewport via JS quand il manque + tables scrollables
+========================= */
+
+@media (max-width: 700px) {
+    /* Tables : scroll horizontal au lieu d'écraser les colonnes */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Form actions : autoriser le retour à la ligne sur petits écrans */
+    .form-actions {
+        flex-wrap: wrap;
+    }
+
+    /* Container : padding latéral plus serré */
+    .container {
+        width: 94%;
+    }
+
+    /* Filtres : empiler verticalement */
+    .filter-box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .filter-box label {
+        margin-right: 0;
+    }
+
+    .filter-box select,
+    .filter-box button {
+        width: 100%;
+    }
+}
+
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body > .container,
+body > div.container {
+    flex: 1;
+}

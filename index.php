@@ -62,6 +62,7 @@ if (isset($_POST['envoyer'])) {
         <a href="#apropos">À propos</a>
         <a href="#fonctionnalites">Fonctionnalités</a>
         <a href="#contact">Contact</a>
+        <a href="#politique">Politique</a>
         <a href="pages/login.php" class="login-btn">Connexion</a>
     </nav>
 </header>
@@ -229,6 +230,48 @@ if (isset($_POST['envoyer'])) {
 
             <button type="submit" name="envoyer">Envoyer</button>
         </form>
+    </div>
+</section>
+
+<section class="landing-section politique-section" id="politique">
+    <div class="section-title">
+        <span>Mentions</span>
+        <h2>Politique de confidentialité &amp; mentions légales</h2>
+        <p>
+            Cette section précise les conditions d’utilisation de l’application
+            ainsi que la manière dont les données des utilisateurs sont traitées.
+        </p>
+    </div>
+
+    <div class="politique-grid">
+        <div class="politique-card">
+            <h3>Politique de confidentialité</h3>
+            <p>
+                Les informations saisies (nom, email, identifiant) sont utilisées uniquement
+                pour la gestion des comptes et des emplois du temps. Aucune donnée n’est
+                transmise à des tiers. Les mots de passe sont stockés sous forme hachée.
+                L’utilisateur peut demander la suppression de son compte à tout moment.
+            </p>
+        </div>
+
+        <div class="politique-card">
+            <h3>Conditions d’utilisation</h3>
+            <p>
+                L’accès à l’application est réservé aux utilisateurs disposant d’un compte
+                valide (administrateur, enseignant ou étudiant). L’utilisateur s’engage à
+                ne pas partager ses identifiants et à utiliser l’application uniquement
+                dans un cadre pédagogique.
+            </p>
+        </div>
+
+        <div class="politique-card">
+            <h3>Mentions légales</h3>
+            <p>
+                Application réalisée dans le cadre d’un mini-projet de développement web —
+                Master MGSI, ENSIASD Taroudant, année universitaire 2025/2026.
+                Le contenu présenté à des fins de démonstration peut être modifié sans préavis.
+            </p>
+        </div>
     </div>
 </section>
 

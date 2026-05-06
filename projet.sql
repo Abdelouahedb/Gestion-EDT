@@ -408,3 +408,5 @@ ALTER TABLE `users`
   ADD CONSTRAINT `users_ibfk_2` FOREIGN KEY (`semestre_id`) REFERENCES `semestres` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   ADD CONSTRAINT `users_ibfk_3` FOREIGN KEY (`enseignant_id`) REFERENCES `enseignants` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
 COMMIT;
+
+

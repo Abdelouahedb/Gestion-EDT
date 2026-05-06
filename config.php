@@ -4,7 +4,7 @@ session_start();
 $localhost = "localhost";
 $username = "root";
 $password = "";
-$dbname = "gestion_emploi_mgsi";
+$dbname = "if0_41819712_gestionedt";
 
 try {
     $PDO = new PDO("mysql:host=$localhost;dbname=$dbname;charset=utf8mb4", $username, $password);

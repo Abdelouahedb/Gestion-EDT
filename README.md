@@ -48,7 +48,7 @@ L'application gère trois rôles :
   3. Ouvrir phpMyAdmin (http://localhost/phpmyadmin).
 
   4. Créer une base de données nommée :
-       gestion_emploi_mgsi
+       if0_41819712_gestionedt
 
   5. Importer le fichier projet.sql dans cette base.
      (Onglet "Importer" -> Choisir projet.sql -> Exécuter)
@@ -58,7 +58,7 @@ L'application gère trois rôles :
        $localhost = "localhost";
        $username  = "root";
        $password  = "";
-       $dbname    = "gestion_emploi_mgsi";
+       $dbname    = "if0_41819712_gestionedt";
 
   7. Ouvrir l'application dans le navigateur :
        http://localhost/NOM_DU_DOSSIER/
@@ -73,17 +73,17 @@ L'application gère trois rôles :
        Password : ENSIASD2026
 
   *** ENSEIGNANT ***
-       Login    : prof_ahmed
+       Login    : prof_boudhane
        Password : 123456
 
-       Login    : prof_sara
-       Password : 123456
+       Login    : prof_brahim
+       Password : 123456    
 
   *** ÉTUDIANT ***
        Login    : etudiant_mgsi_s1
        Password : 123456
 
-       Login    : etudiant_gi_s1
+       Login    : etudiant_il_s1
        Password : 123456
 
 

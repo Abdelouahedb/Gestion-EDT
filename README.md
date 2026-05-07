@@ -23,7 +23,7 @@
 
 **GestionEDT** is a full-stack web application that helps schools and universities organize their weekly schedules without headaches. Create classes, assign teachers, book rooms — and let the system catch every conflict before it becomes a problem.
 
-Built as a 2-month academic project at **ENSIASD Taroudant** (MGSI program, 2025/2026), with a focus on clean code, real-world security practices, and a UI that doesn't look AI-generated.
+Built as a 2-month academic project at **ENSIASD Taroudant** (MGSI program, 2025/2026), with a focus on clean code, real-world security practices, and with less use of AI.
 
 ---
 
@@ -78,18 +78,6 @@ Built as a 2-month academic project at **ENSIASD Taroudant** (MGSI program, 2025
 </td>
 </tr>
 </table>
-
----
-
-## 🖼️ Screenshots
-
-| Landing Page | Dashboard |
-|:---:|:---:|
-| ![Landing](doc/captures/landing_page_(Hero).png) | ![Dashboard](doc/captures/page_dashboard_admin.png) |
-
-| Login | Schedule Builder |
-|:---:|:---:|
-| ![Login](doc/captures/page_login.png) | ![Emploi](doc/captures/page_emploi.png) |
 
 ---
 

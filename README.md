@@ -197,6 +197,6 @@ If this helped you or you found it interesting, drop a star — it costs nothing
 
 **[⬆ Back to top](#-gestionedt)**
 
-Made with ☕ in Morocco 🇲🇦
+Made with ☕ in Morocco
 
 </div>

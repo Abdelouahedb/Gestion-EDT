@@ -85,7 +85,7 @@ Built as a 2-month academic project at **ENSIASD Taroudant** (MGSI program, 2025
 
 | Landing Page | Dashboard |
 |:---:|:---:|
-| ![Landing](doc/captures/landing_page_(hero).png) | ![Dashboard](doc/captures/page_dashboard_admin.png) |
+| ![Landing](doc/captures/landing_page_(Hero).png) | ![Dashboard](doc/captures/page_dashboard_admin.png) |
 
 | Login | Schedule Builder |
 |:---:|:---:|

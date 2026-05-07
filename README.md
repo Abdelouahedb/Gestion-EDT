@@ -183,10 +183,10 @@ Free hosting tier — may be slow on cold start, but everything works.
 
 <div align="center">
 
-| <a href="https://github.com/Abdelouahedb"><img src="https://github.com/Abdelouahedb.png" width="80px" alt=""/></a> | 👩‍💻 |
+| <a href="https://github.com/Abdelouahedb"><img src="https://github.com/Abdelouahedb.png" width="80px" alt=""/></a> |  <a href="https://github.com/nadaa11111"><img src="https://github.com/nadaa11111.png" width="80px" alt=""/></a> |
 |:---:|:---:|
 | **Abdelouahed Boudrari** | **Nada Nassraoui** |
-| [@Abdelouahedb](https://github.com/Abdelouahedb) | [@nadaa11111](https://github.com/nadaa11111|
+| [@Abdelouahedb](https://github.com/Abdelouahedb) | [@nadaa11111](https://github.com/nadaa11111)|
 
 **Supervised by** *M. LAASSEM*
 **Filière** *MGSI — ENSIASD Taroudant — 2025/2026*
